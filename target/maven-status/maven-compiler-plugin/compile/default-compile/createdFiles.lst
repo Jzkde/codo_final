@@ -1,0 +1,6 @@
+modelo\Oradores.class
+com\app\codo_a_codojsp\resources\JavaEE8Resource.class
+dao\OradoresDao.class
+util\ConexionDb.class
+com\app\codo_a_codojsp\JAXRSConfiguration.class
+controlador\RegistroOrador.class

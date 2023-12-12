@@ -1,0 +1,108 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+.logo {
+  height: 10vh;
+  min-height: 50px;
+}
+
+.header {
+  height: 10vh;
+  min-height: 50px;
+  background-color: grey;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.bar {
+  text-decoration: none;
+  color: aliceblue;
+}
+.tik {
+  text-decoration: none;
+  color: green;
+}
+
+.img-conf {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 99vw;
+  filter: brightness(50%);
+}
+
+.conferencia {
+  text-align: right;
+  color: aliceblue;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(-200px, -200px);
+}
+.img-lugar {
+  width: 100%;
+}
+
+.react {
+  margin-left: 10px;
+  background-color: rgb(100, 187, 237);
+  border: 2px solid rgb(100, 187, 237);
+  border-radius: 10px;
+  padding: 3px;
+  color: aliceblue;
+}
+.java {
+  background-color: rgb(255, 174, 0);
+  border: 2px solid rgb(255, 174, 0);
+  border-radius: 10px;
+  padding: 3px;
+}
+.startups {
+  margin-left: 10px;
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 3px;
+  color: aliceblue;
+}
+.negocios {
+  background-color: rgb(90, 90, 90);
+  border: 2px solid rgb(90, 90, 90);
+  border-radius: 10px;
+  padding: 3px;
+  color: aliceblue;
+}
+.bsas {
+  background-color: rgb(56, 56, 56);
+  color: aliceblue;
+}
+.formulario {
+  color: grey;
+}
+u {
+  border-bottom: 1px dotted #9999cc;
+  text-decoration: none;
+}
+a:active {
+  color: black !important;
+}
+.construccion {
+  height:70vh;
+}
+footer {
+  color: aliceblue;
+  background-color: darkslateblue;
+  padding: 15px;
+}
+
+.bor {
+  border: 1px solid black;
+}
