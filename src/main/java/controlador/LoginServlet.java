@@ -1,4 +1,3 @@
-
 package controlador;
 
 import java.io.IOException;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import util.ConexionDb;
-
 
 //La URL en la anotación debe reflejar cómo quieres acceder al servlet desde el navegador,
 //no su ubicación en la estructura de carpetas del proyecto
@@ -41,8 +39,7 @@ public class LoginServlet extends HttpServlet {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        
-        
+
         // cerrando los recursos manualmente
         try {
             conn = ConexionDb.conectar(); // Asume que tienes un método estático getConnection en tu clase Conexion
@@ -60,27 +57,19 @@ public class LoginServlet extends HttpServlet {
         } finally {
             // Cerrar recursos
             try {
-                if (rs != null) rs.close();
-                if (pstmt != null) pstmt.close();
-                if (conn != null) conn.close();
+                if (rs != null) {
+                    rs.close();
+                }
+                if (pstmt != null) {
+                    pstmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        
-        // Bloque try-with-resources
-        /*
-        try (Connection conn = ConexionDB.conectar();
-             PreparedStatement pstmt = conn.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
-            pstmt.setString(1, username);
-            pstmt.setString(2, password);
 
-            return rs.next(); // Si hay un resultado, las credenciales son correctas
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-        */
     }
 }
