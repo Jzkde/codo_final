@@ -49,7 +49,7 @@
                     } else {
                     %>
                     <tr>
-                        <td colspan="5">No hay oradores registrados.</td>
+                        <td colspan="6">No hay oradores registrados.</td>
                     </tr>
                     <%
                         }
